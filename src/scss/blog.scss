@@ -1,0 +1,140 @@
+.blog {
+    margin-bottom: 190px;
+
+    .blog-wrap {
+    
+        .blog-title {
+            font-size: $_64px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 41px;
+
+            @media (max-width: 1800px) {
+                font-size: $_48px;
+            }
+        }
+        .blog-slider__wrapper {
+        
+            .slider-dots {
+                width: 105px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+
+                @media (max-width: 1800px) {
+                    width: 70px;
+                }
+
+                .slider-dot {
+                    @media (max-width: 1800px) {
+                        width: 18px;
+                    }
+                }
+            }
+            
+            .slider-content__wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 90px;
+
+                @media (max-width: 1800px) {
+                    justify-content: space-evenly;
+                    margin-bottom: 40px;
+                }
+            
+                .slider-arrow__left {
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                    &:hover {
+                        scale: 1.05;
+                    }
+
+                    @media (max-width: 1800px) {
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+                .slider-content {
+                    padding: 60px;
+                    position: relative;
+                
+                    .slider-quote__left {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+
+                        @media (max-width: 1800px) {
+                            img {
+                                width: 50px;
+                            }
+                        }
+                    }
+                    .user-comment__wrapper {
+                        width: 1237px;
+                        display: flex;
+
+                        @media (max-width: 1800px) {
+                            width: 1070px;
+                        }
+                    
+                        .user-photo__wrapper {
+                            margin-right: 15px;
+
+                            @media (max-width: 1800px) {
+                                img {
+                                    width: 200px;
+                                }
+                            }
+                        }
+                        .slider-content__info {
+                        
+                            .slider-content__title {
+                                font-size: $_48px;
+                                font-weight: 500;
+
+                                @media (max-width: 1800px) {
+                                    font-size: $_40px;
+                                }
+                            }
+                            .slider-content__desc {
+                                font-size: $_36px;
+
+                                @media (max-width: 1800px) {
+                                    font-size: $_30px;
+                                }
+                            }
+                        }                                       
+                    }
+                    .slider-quote__right {
+                        position: absolute;
+                        bottom: 45px;
+                        right: 305px;
+
+                        @media (max-width: 1800px) {
+                            img {
+                                width: 50px;
+                            }
+                        }
+                    }                                 
+                } 
+                .slider-arrow__right {
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                    &:hover {
+                        scale: 1.05;
+                    }
+
+                    @media (max-width: 1800px) {
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }  
+            }                     
+        }   
+    }
+}

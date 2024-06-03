@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@import '../scss/cdn';
+@import '../scss/varFontSize';
+@import '../scss/header.scss';
+@import '../scss/kitchen.scss';
+@import '../scss/teste.scss';
+@import '../scss/resipes.scss';
+@import '../scss/blog.scss';
+@import '../scss/footer.scss';
+
+html {
+    font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1770px;
+    margin: 0 auto;
+
+    @media (max-width: 1800px) {
+        max-width: 1650px;
+    }
+
+    @media (max-width: 1680px) {
+        max-width: 1470px;
+    }
+}
+
+.read-more__btn {
+    display: block;
+    width: 289px;
+    height: 82px;
+    margin: 0 auto 39px;
+    background-color: #FF7F48;
+    border: none;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: $_32px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    
+
+    &:hover {
+        background-color: #AB0505;
+    }
+
+    @media(max-width: 1800px) {
+        width: 210px;
+        height: 65px;
+        font-size: $_26px;
+        border-radius: 25px;
+    }
+}
